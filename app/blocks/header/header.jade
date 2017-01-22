@@ -1,0 +1,17 @@
+mixin header()
+	section.header&attributes(attributes)
+		img.header__logo(src="assets/img/logo.png" alt="logo")
+		ul.header__menu
+			li.header__item
+				a.header__link(href="#") ПРО НАС
+			li.header__item
+				a.header__link(href="#") ПОСЛУГИ
+			li.header__item
+				a.header__link(href="#") АКЦІЇ
+			li.header__item
+				a.header__link(href="#") КОНТАКТИ
+		select.header__language
+			option.headet__lang UA
+			option.headet__lang EN
+			option.headet__lang PL
+			option.headet__lang RU

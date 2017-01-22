@@ -1,0 +1,18 @@
+extends ../blocks/layout-default/layout-default
+include ../blocks/header/header
+include ../blocks/hero/hero
+include ../blocks/about/about
+include ../blocks/brand/brand
+include ../blocks/action/action
+include ../blocks/contact/contact
+
+block head
+    - var pageTitle = 'letual';
+
+block content
+    +header
+    +hero
+    +about
+    +brand
+    +action
+    +contact
