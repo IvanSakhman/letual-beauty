@@ -1,24 +1,32 @@
 .about
   width 100%
   font-family 'PlayfairDisplay'
+  :after
+    clear both
+    content ""
+    display block
   &__content
-    padding-top 120px
+    padding-top 50px
+    width 1170px
+    margin 0 auto
+    &_service
+      padding-top 90px
   &__title
-    font-size 55px
+    font-size 60px
     font-weight 400
     line-height 29px
     text-transform uppercase
     text-align center
   &__subheader
-    font-size 20px
+    font-size 22px
     font-weight 400
     line-height 29px
     text-transform uppercase
-    border-top 2px solid black
-    border-bottom 2px solid black
-    width 600px
+    border-top 1px solid black
+    border-bottom 1px solid black
+    width 60%
     text-align center
-    margin 45px auto 0
+    margin 27px auto 0
     padding 20px 0
   &__info
     width 90%
@@ -27,24 +35,34 @@
     font-size 16px
     font-weight 400
     line-height 24px
-    margin-top 36px
+    margin-top 26px
     max-width 1390px
   &__block
-    width 800px
+    width 912px
     height 440px
-    margin 60px auto 0
+    margin 30px auto 0
     &_service
-      height 840px
+      height 1060px
   &__item
-    width 360px
+    position relative
+    width 420px
+    height 370px
+    float left
+    margin 0 18px
     &_welcome
-      width 360px
+      width 420px
       height 100%
       background-color #222
       float left
     &_pic
       float left
       height 100%
+      background url('../img/background.jpg')
+      background-size cover
+    &_service
+      height 520px
+      margin-bottom 20px
+      overflow hidden
   &__slogan
     font-size 22px
     font-weight 400
@@ -53,7 +71,7 @@
     color #fff
     margin 48px auto 0
     padding-bottom 20px
-    border-bottom 2px solid white
+    border-bottom 1px solid white
     text-align center
   &__text
     color white
@@ -63,15 +81,25 @@
     width 360px
     margin 40px auto 0
     text-align center
-  &__item
-    position relative
-    width 400px
-    height 420px
-    float left
   &__service
     position absolute
     width 100%
     height 100%
+    &_zoom
+      &:hover
+        transform scale(1.2)
+    &_hair
+      background url('../img/1.jpg')
+      background-size cover
+    &_makeup
+      background url('../img/2.jpg')
+      background-size cover
+    &_cosm
+      background url('../img/3.jpg')
+      background-size cover
+    &_nail
+      background url('../img/4.jpg')
+      background-size cover
   &__border
     position absolute
     top 50%
@@ -90,3 +118,36 @@
     left 50%
     transform translate(-50%,-50%)
     text-align center
+
+@media screen and (max-width: 1280px)
+  .about
+    &__content
+      width 960px
+      &_service
+        padding-top 50px
+    &__title
+      font-size 50px
+    &__subheader
+      font-size 20px
+    &__info
+      width 80%
+    &__block
+      width 800px
+    &__item
+      width 380px
+      height 340px
+      margin 0 10px
+      &_service
+        margin-bottom 20px
+    &__slogan
+      width 265px
+      font-size 18px
+      margin-top 25px
+      padding-bottom 25px
+    &__text
+      width 320px
+      margin-top 25px
+    &__block
+      height 340px
+      &_service
+        height 700px

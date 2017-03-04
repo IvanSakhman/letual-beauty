@@ -1,13 +1,13 @@
 .header
   display block
   position fixed
-  height 70px
+  height 80px
   width 100%
   background #fff
   z-index: 10
   &__logo
     position absolute
-    top 0
+    top 5px
     left 14%
     width 91px
   &__menu
@@ -17,10 +17,10 @@
     transform translate(-50%,-50%)
   &__item
     display inline-block
-    margin 0 5px
+    margin 0 15px
   &__link
     font-family 'PlayfairDisplay'
-    font-size 20px
+    font-size 16px
     font-weight 400
     text-transform uppercase
     color #000
@@ -34,3 +34,10 @@
     position absolute
     top 50%
     transform translateY(-50%)
+
+@media screen and (max-width: 1280px)
+  .header
+    height 80px
+    &__logo
+      width 80px
+      top 3px

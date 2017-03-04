@@ -2,17 +2,28 @@ mixin brand()
     section.brand&attributes(attributes)
         h2.brand__title БРЕНДИ
         .brand__emblems
-            .brand__item
-                img(src="assets/img/kerastase.svg").brand__pic
-            .brand__item
-                img(src="assets/img/loreal.svg").brand__pic
-            .brand__item
-                img(src="assets/img/mac.svg").brand__pic
-            .brand__item
-                img(src="assets/img/decleor.svg").brand__pic
-            .brand__item
-                img(src="assets/img/Cirita logo.svg").brand__pic
-            .brand__item
-                img(src="assets/img/CND.svg").brand__pic
-            .brand__item
-                img(src="assets/img/artistic.svg").brand__pic
+            .swiper-container
+                .swiper-wrapper
+                    .brand__item.swiper-slide
+                        img(src="assets/img/kerastase.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/loreal.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/mac.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/decleor.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/Cirita logo.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/CND.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/artistic.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/gehwol.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/gerards.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/phisiotherm.svg").brand__pic
+                    .brand__item.swiper-slide
+                        img(src="assets/img/suda.svg").brand__pic
+                .swiper-pagination
