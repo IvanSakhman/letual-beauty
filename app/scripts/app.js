@@ -18,14 +18,14 @@ $(() => {
                 spaceBetween: 40
             },
             768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 30
             },
             640: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            320: {
+            425: {
                 slidesPerView: 1,
                 spaceBetween: 10
             }
