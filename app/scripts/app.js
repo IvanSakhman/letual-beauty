@@ -11,7 +11,7 @@ $(() => {
         paginationClickable: true,
         spaceBetween: 50,
         slidesPerView: 4,
-        autoplay: 3000,
+        autoplay: 1000,
         breakpoints: {
             1024: {
                 slidesPerView: 3,

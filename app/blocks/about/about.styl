@@ -64,7 +64,7 @@
       background url('../img/background.jpg')
       background-size cover
     &_service
-      height 520px
+      height 470px
       margin-bottom 20px
       overflow hidden
   &__slogan
@@ -98,9 +98,11 @@
     &_makeup
       background url('../img/2.jpg')
       background-size cover
+      background-position-x -80px
     &_cosm
       background url('../img/3.jpg')
       background-size cover
+      background-position-x -135px
     &_nail
       background url('../img/4.jpg')
       background-size cover
@@ -151,6 +153,11 @@
     &__text
       width 320px
       margin-top 25px
+    &__service
+      &_makeup
+        background-position-x -20px
+      &_cosm
+        background-position-x -50px
     &__block
       height 340px
       &_service
@@ -190,7 +197,7 @@
       width 90%
       margin-top 16px
     &__block
-      height 700px
+      height 580px
       width 90%
       &_service
         height 1400px
@@ -217,6 +224,29 @@
       width 90%
       font-size 14px
       line-height 20px
+    &__service
+      &_makeup
+        background-position-x 0
+      &_cosm
+        background-position-x 0
     &__desc
       font-size 24px
       line-height 35px
+
+@media screen and (max-width: 470px)
+  .about
+    &__block
+      &_service
+        height 1150px
+    &__item
+      height 280px
+
+@media screen and (max-width: 425px)
+  .about
+    &__block
+      height 440px
+      &_service
+        height 920px
+    &__item
+      height 220px
+
