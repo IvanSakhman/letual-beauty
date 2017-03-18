@@ -6,7 +6,7 @@ import 'style!css!swiper/dist/css/swiper.css';
 $(() => {
 	svg4everybody();
 
-    var swiper = new Swiper('.swiper-container', {
+    let swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         spaceBetween: 50,
@@ -30,5 +30,24 @@ $(() => {
                 spaceBetween: 10
             }
         }
+    });
+    let cross = $( ".cross" );
+    let menu = $( ".menu" );
+    let hamburger = $( ".hamburger" );
+
+    cross.hide();
+    menu.hide();
+    hamburger.click(function() {
+        menu.slideToggle( 100, function() {
+            hamburger.hide();
+            cross.show();
+        });
+    });
+
+    cross.click(function() {
+        menu.slideToggle( 100, function() {
+            cross.hide();
+            hamburger.show();
+        });
     });
 });

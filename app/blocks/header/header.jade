@@ -3,15 +3,23 @@ mixin header()
 		img.header__logo(src="assets/img/logo.png" alt="logo")
 		ul.header__menu
 			li.header__item
-				a.header__link(href="#") ПРО НАС
+				a.header__link(href="index.html") ПРО НАС
 			li.header__item
-				a.header__link(href="#") ПОСЛУГИ
+				a.header__link(href="service.html") ПОСЛУГИ
 			li.header__item
 				a.header__link(href="#") АКЦІЇ
 			li.header__item
 				a.header__link(href="#") КОНТАКТИ
-		select.header__language
-			option.header__lang UA
-			option.header__lang EN
-			option.header__lang PL
-			option.header__lang RU
+		//select.header__language
+		//	option.header__lang UA
+		//	option.header__lang EN
+		//	option.header__lang PL
+		//	option.header__lang RU
+		button.hamburger &#9776;
+			button.cross &#x274c;
+			.menu
+				ul.menu__block
+					li.menu__item
+						a.menu__link(href="index.html") ПРО НАС
+					li.menu__item
+						a.menu__link(href="service.html") ПОСЛУГИ

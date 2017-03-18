@@ -25,7 +25,11 @@
     text-transform uppercase
     color #000
     text-decoration none
-    padding 5px
+    padding 10px
+    border-radius 3px
+    border 1px solid transparent
+    &:hover
+      border 1px solid #000
   &__language
     right: 4.5%
     background #fff
@@ -34,7 +38,21 @@
     position absolute
     top 50%
     transform translateY(-50%)
+.hamburger,
+.cross
+  color rgb(0, 0, 0{})
+  opacity 0.69
+  display none
+  -webkit-appearance none
+  appearance none
+  background transparent
+  border none
 
+.cross
+  display none
+
+.menu
+  display none
 @media screen and (max-width: 1280px)
   .header
     height 80px
@@ -44,4 +62,54 @@
 
 @media screen and (max-width: 1023px)
   .header
-    display none
+    display block
+    height 45px
+    &__menu
+      display none
+    &__logo
+      width 53px
+
+  .menu
+    &__block
+      width 100%
+      background-color #fff
+      top 45px
+      position absolute
+      padding-bottom 10px
+    &__link
+      font-family 'PlayfairDisplay'
+      font-size 14px
+      font-weight 400
+      text-transform uppercase
+      color #000
+      text-decoration none
+      padding 10px
+      text-align center
+      display block
+      border-radius 3px
+      border 1px solid transparent
+      width 90px
+      margin 0 auto
+      &:hover
+        border 1px solid #000
+
+
+  .hamburger,
+  .cross
+    color rgb(0, 0, 0)
+    opacity 0.69
+    display block
+    -webkit-appearance none
+    appearance none
+    background transparent
+    border none
+
+  .hamburger
+    float right
+    font-size 24px
+    margin 10px 13px
+
+  .cross
+    float right
+    font-size 28px
+    margin 8px 14px
