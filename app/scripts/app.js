@@ -50,4 +50,25 @@ $(() => {
             hamburger.show();
         });
     });
+
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(2000)
+            .next()
+            .fadeIn(2000)
+            .end()
+            .appendTo('#slideshow');
+    }, 7000);
+
+    $( ".about__item" ).hover(
+        function() {
+            $(this).children(":first").addClass("about__scale");
+        },
+        function() {
+            $(this).children(":first").removeClass("about__scale");
+        }
+    );
+
 });
