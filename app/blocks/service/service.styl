@@ -15,11 +15,16 @@
     float left
     min-height 550px
     overflow hidden
+    position relative
     &_right
       float right
   &__img
     min-width 100%
     min-height 100%
+    max-width 130%
+    max-height 130%
+    position absolute
+    left -100px
   &__container
     width 50%
     height 100%
@@ -36,15 +41,22 @@
       background url("../img/service/cosmetology_under.png") no-repeat;
       background-size cover
     &_nail
-      background url("../img/service/nail_under.png") no-repeat;
+      background url("../img/service/nail_under.jpg") no-repeat;
       background-size cover
+    &_man
+      background url("../img/service/man_under.png") no-repeat;
+      background-size cover
+    &_child
+      background url("../img/service/child_under.jpg") no-repeat;
+      background-size cover
+      background-position -100px 0
   &__white
     background-color rgba(256,256,256,0.7)
     height 100%
     width1 100%
   &__wrapper
     padding 80px 0 0 80px
-    width 515px
+    width 590px
   &__title
     font-size 35px
     font-weight 400
@@ -77,7 +89,7 @@
     float left
   &__price
     float right
-    margin-right 40px
+    margin-right 20px
 
 @media screen and (max-width: 1440px)
   .service
@@ -91,7 +103,7 @@
     &__layout
       height 550px
     &__wrapper
-      width 330px
+      width 430px
       padding 30px 0 0 30px
     &__title
       font-size 24px
@@ -121,11 +133,13 @@
       padding-left 0
       margin 0 auto
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 500px)
   .service
     &__wrapper
-      width 280px
+      width 300px
     &__title
       font-size 22px
     &__subtitle
       font-size 14px
+    &__price
+      margin-right 0
